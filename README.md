@@ -2,7 +2,7 @@
 
 ## Project description
 
-TODO: Replace this line with a 30-300 character description of what this project does. (This is part of the assignment, read on and it will make more sense.)
+This project takes a .csv file of clinic visits (including patient ids, visit dates, and a systolic blood pressure reading) and skips blank rows, rows with an incorrect number of fields, or implausible systolic readings, and every other row.
 
 ## Run
 
