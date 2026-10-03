@@ -22,7 +22,7 @@ def mean_systolic(readings):
 def count_patients(encounters):
     """TODO: Retain only unique patient IDs."""
     # TODO: collect the patient IDs and keep only the distinct ones.
-    patients = encounters 
+    patients = encounters
     patients = set(patients)
     return len(patients)
 
