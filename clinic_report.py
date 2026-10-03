@@ -89,16 +89,5 @@ def main():
             followup_file.write(f"{followup}\n")
 
 
-#Cutoff: <the cutoff you chose> mmHg
-#Reason: <one line, 20-300 characters, saying why you chose it>
-#<patient id>
-#<patient id>
-
-   # echo "Lowest systolic:", , "mmHg">> vitals_report.txt
-
-
-    
-
-
 if __name__ == "__main__":
     main()
