@@ -1,4 +1,4 @@
-# Python cache
+# Added .venv below once venv created
 __pycache__/
 *.pyc
 .venv/
