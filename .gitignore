@@ -1,4 +1,4 @@
-# Added .venv below both pycache
+# Added .venv below both pycache lines.
 __pycache__/
 *.pyc
 .venv/
