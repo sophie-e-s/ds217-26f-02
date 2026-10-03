@@ -42,6 +42,7 @@ def read_encounters(data_path):
         except ValueError as error:
             print(f"Skipping {patient_id}: {error}")
             skipped += 1
+            continue
         if 60 <= systolic <= 250:
             encounters.append({"patient_id": patient_id, "date": visit_date, "systolic": systolic})
         else:
@@ -73,7 +74,7 @@ def main():
     output_dir.mkdir(exist_ok=True)           # no error when output/ already exists
     report_path = output_dir / "vitals_report.txt"
     with open(report_path, "w", encoding="utf-8") as report_file:
-        report_file.write(f"Usable encounters: {len(readings)}\n")
+        report_file.write(f"Usable encounters: {len(encounters)}\n")
         report_file.write(f"Skipped rows: {skipped}\n")
         report_file.write(f"Patients seen: {count_patients(readings)}\n")
         report_file.write(f"Mean systolic: {mean_systolic(readings):.2f} mmHg\n")

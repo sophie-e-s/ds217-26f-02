@@ -2,7 +2,6 @@ Cutoff: 120 mmHg
 Reason: I picked the lowest possible value to capture as many as possible for followup.
 P002
 P003
-P004
 P005
 P006
 P009
